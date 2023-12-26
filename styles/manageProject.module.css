@@ -1,0 +1,27 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    /* width: 70vw; */
+}
+
+.choice {
+    cursor: pointer;
+    width: fit-content;
+    font-size : clamp(13px, 1.2vw, 20px);
+    border: 1px #fbfbf2 solid;
+    color: #fbfbf2;
+    border-radius: 20px;
+    padding: 1vh 0.5vw;
+}
+
+.choicesDiv{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDiv {
+    width: 45vw;
+    margin-left: 15vw;
+}
+
+

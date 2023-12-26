@@ -1,0 +1,68 @@
+
+.timer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 100px;
+    background: -webkit-linear-gradient(#da9215, #af3800, #9b2915, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.timerCol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.buttonFinish{
+    background-color: #af3800;
+    width: fit-content;
+    text-align: center;
+    font-size: larger;
+    padding: 0.75vh 1vw;
+    border-radius: 20px;
+    color: #fbfbf2;
+    cursor: pointer;
+}
+.buttonStart{
+    background-color: #226f54;
+    width: fit-content;
+    text-align: center;
+    font-size: larger;
+    padding: 0.75vh 1vw;
+    border-radius: 20px;
+    color: #fbfbf2;
+    cursor: pointer;
+}
+.buttonPause {
+    width: fit-content;
+    text-align: center;
+    font-size: larger;
+    padding: 0.75vh 1vw;
+    border-radius: 20px;
+    color: #fbfbf2;
+    cursor: pointer;
+    border: 1.5px solid #af3800;  
+}
+.buttonsDiv{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+.buttonDiv{
+    width: 100%;
+    justify-content: center;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.taskCard{
+    border-radius: 20px;
+    color: #fdfffc;
+    padding: 3vh 1.5vw;
+    background-color: #18181b;
+}

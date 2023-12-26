@@ -1,0 +1,115 @@
+/* @media only screen and (max-width: 1024px) {
+    #messageInput {
+        height: 11vh !important;
+        max-width: 70vw !important;
+    }
+
+    .formField {
+        width: 80% !important;
+        font-size: 14px !important;
+
+    }
+
+
+    .formField:placeholder-shown~.formLabel {
+        font-size: 15px !important;
+
+    }
+
+    .formLabel {
+
+        font-size: 15px !important;
+
+    }
+
+
+
+    .formField:focus~.formLabel {
+
+        font-size: 17px !important;
+    }
+
+    .formGroup {
+        width: 45% !important;
+    }
+} */
+
+#messageInput {
+    /* height: 10vh; */
+}
+#messageInputField{
+    max-width: 100%;
+    width: 100% !important;
+    padding-top: 2vh;
+    margin-top: 5px;
+    height: 50px;
+    max-height: 30vh;
+}
+.formGroup {
+    position: relative;
+    padding: 20px 0 0;
+    width: 20vw;
+    margin-bottom: 5vh;
+    /* max-width: 180px; */
+  }
+  
+  .formField {
+    font-family: inherit;
+    width: 90%;
+    border: none;
+    border-bottom: 2px solid #fdfffc;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .formField::placeholder {
+    color: transparent;
+  }
+  .formField:placeholder-shown ~ .formLabel {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .formLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #fdfffc;
+    pointer-events: none;
+  }
+  
+  .formField:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #eff1f4, #eff1f4);
+    border-image-slice: 1;
+  }
+  
+  .formField:focus ~ .formLabel {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 19px;
+    font-weight: 800;
+    color: #eff1f4;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .formField:required, .formField:invalid {
+    box-shadow: none;
+  }
+
+  .Row{
+  padding: 0 2vw;
+  justify-content: space-between;
+  }

@@ -1,0 +1,50 @@
+
+@import url("https://fonts.googleapis.com/css?family=Comfortaa&display=swap");
+
+  #container {
+    font-family: "Comfortaa" ;
+    width: 4vw;
+    height: 100vh;
+    background: #18181b;
+    color: #fbfbf2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    transition:
+    width 1s,;
+    position:fixed;
+    top: 0;
+    padding: 3vh 0;
+    z-index: 4;
+}
+
+#container:hover {
+    width: 15vw;
+}
+
+.option {
+    font-size : clamp(13px, 1.5vw, 20px);
+    visibility: hidden;
+    opacity: 0;
+    transition:
+    all 0.5s,;
+    cursor: pointer;
+   padding: 2.5vh 0;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.option:hover {
+    
+    background-color: #29292c;
+}
+
+#container:hover > .option {
+    visibility: visible;
+    opacity: 1;
+    transition:
+    visibility 3s,
+    opacity 3s;
+}
