@@ -26,7 +26,7 @@ export default function TaskCard(props) {
 
   async function handleFinish() {
 
-    const rawResponse = await fetch('http://localhost:3000/task/end-task', {
+    const rawResponse = await fetch('https://no-l-back.vercel.app//task/end-task', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: userId, finished: !finished }),

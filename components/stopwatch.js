@@ -44,7 +44,7 @@ export default function Stopwatch(props) {
   const handleStart = async () => {
     setIsActive(true);
     setIsPaused(false);
-    const rawResponse = await fetch('http://localhost:3000/task/add-session', {
+    const rawResponse = await fetch('https://no-l-back.vercel.app//task/add-session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: "RwvZNfRY3HthTWSual7hLQDK", session:{}  }),
@@ -62,7 +62,7 @@ export default function Stopwatch(props) {
   };
   const handleFinish = async () => {
     setIsActive(!isActive)
-    const rawResponse = await fetch('http://localhost:3000/task/end-session', {
+    const rawResponse = await fetch('https://no-l-back.vercel.app//task/end-session', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: "RwvZNfRY3HthTWSual7hLQDK", sessionId, duration: time/ 3600000  }),
