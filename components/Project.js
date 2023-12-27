@@ -80,7 +80,7 @@ useEffect(() => {
     }, [finished])
 
     async function handleDeleteTask(t) {
-        const rawResponse = await fetch('https://no-l-back.vercel.app//task/delete', {
+        const rawResponse = await fetch('https://no-l-back.vercel.app/task/delete', {
             method: 'DELETE',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ taskId: t._id, projectId: props.project._id, userId: userId}),
@@ -101,7 +101,7 @@ useEffect(() => {
     })
 
     async function handleDelete() {
-        const rawResponse = await fetch('https://no-l-back.vercel.app//project/delete', {
+        const rawResponse = await fetch('https://no-l-back.vercel.app/project/delete', {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId, projectId: props.project._id }),
@@ -116,7 +116,7 @@ useEffect(() => {
 
     async function handleFinish() {
 
-        const rawResponse = await fetch('https://no-l-back.vercel.app//project/end-project', {
+        const rawResponse = await fetch('https://no-l-back.vercel.app/project/end-project', {
           method: 'PATCH',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ userId, projectId: props.project._id, finished: !finished }),

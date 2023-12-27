@@ -22,7 +22,7 @@ export default function CreateProject(props) {
             if (!state.desc) { setValide2(true) }
             if (!state.budget) { setValide3(true) }
         } else {
-            const rawResponse = await fetch('https://no-l-back.vercel.app//project/create', {
+            const rawResponse = await fetch('https://no-l-back.vercel.app/project/create', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ project: { name: state.name, budget: Number(state.budget), desc: state.desc }, userId: "RwvZNfRY3HthTWSual7hLQDK" }),

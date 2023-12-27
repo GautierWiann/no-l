@@ -14,7 +14,7 @@ export default function ModifyProject(props) {
 
     useEffect(() => {
         async function call() {
-            const rawresponse = await fetch(`https://no-l-back.vercel.app//project/${userId}`)
+            const rawresponse = await fetch(`https://no-l-back.vercel.app/project/${userId}`)
             const response = await rawresponse.json()
             setProjectsData(response.projects.reverse())
         }
