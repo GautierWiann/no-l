@@ -1,6 +1,9 @@
 #container{
     display: flex;
     flex-direction: row;
+    @media  (max-width : 782px) {
+        flex-direction: column;
+    } 
     /* width: 70vw; */
 }
 
@@ -12,16 +15,29 @@
     color: #fbfbf2;
     border-radius: 20px;
     padding: 1vh 0.5vw;
+    @media  (max-width : 782px) {
+        padding: 1vh 2vw;
+    } 
 }
 
 .choicesDiv{
     display: flex;
     flex-direction: column;
+    @media  (max-width : 782px) {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+    } 
 }
 
 .mainDiv {
     width: 45vw;
     margin-left: 15vw;
+    @media  (max-width : 782px) {
+        width: 94%;
+        margin-left: 3%;
+        margin-top: 8%;
+    } 
 }
 
 

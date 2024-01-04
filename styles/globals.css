@@ -22,7 +22,7 @@
   cursor: pointer;
   z-index: 1;
   font-weight: 300;
-  font-size: 17px;
+  font-size : clamp(13px, 1.2vw, 20px) !important;
   font-family: 'Roboto', 'Segoe UI', sans-serif;
   text-transform: uppercase;
   color: #fbfbf2 !important;

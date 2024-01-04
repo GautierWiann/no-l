@@ -1,5 +1,13 @@
 .container{
     width: 60vw;
+    @media (max-width : 782px) {
+        width: 100%;
+    }
 }
 
-.rowProjectCards {}
+.rowProjectCards {
+    @media (max-width : 782px) {
+        width: 100%;
+        justify-content: center;
+    }
+}

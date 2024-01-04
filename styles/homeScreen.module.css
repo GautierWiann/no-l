@@ -1,7 +1,5 @@
-
-
 #page {
-    background: #12100e ;
+    background: #12100e;
     width: 100vw;
     min-height: 100vh;
     overflow: hidden;
@@ -10,4 +8,9 @@
 .mainDiv {
     margin-left: 8vw;
     margin-top: 10vh;
+
+    @media (max-width : 782px) {
+        margin-top: 12vh;
+        margin-left: 0vw;
+    }
 }
