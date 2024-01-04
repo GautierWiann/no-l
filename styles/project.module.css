@@ -60,8 +60,8 @@
     fill: white;
     position:relative;
   
-    bottom:18px;
-    left: 96%;
+    top:18px;
+    left: 92%;
     height: 12px;
     cursor: pointer;
   }

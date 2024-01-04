@@ -31,6 +31,7 @@ export default function TaskCard(props) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: userId, finished: !finished }),
     });
+    console.log("🚀 ~ file: taskCard.js:34 ~ handleFinish ~ rawResponse:", rawResponse)
 
     const response = await rawResponse.json();
     console.log("🚀 ~ file: taskCard.js:36 ~ handleFinish ~ response:", response)
