@@ -52,7 +52,7 @@ export default function Session() {
             <Col md='3' className={styles.projectsCol}>
                 {show ? projectsToDisplay : tasksToDisplay}
             </Col>
-            {task.name && <Col md={{ size: 8, offset: 1 }}> <Stopwatch task={task} projectId={projectData._id} /></Col>}
+            {task.name && <Col md={{ size: 8, offset: 1 }} xs={{ size: 10, offset: 1 }}> <Stopwatch task={task} projectId={projectData._id} /></Col>}
         </div>
     );
 }

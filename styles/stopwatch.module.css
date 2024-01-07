@@ -21,6 +21,9 @@
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
+    @media screen and (max-width:782px){
+        padding: 0.75vh 2vw;
+    }
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
@@ -31,6 +34,9 @@
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
+    @media screen and (max-width:782px){
+        padding: 0.65vh 2.5vw;
+    }
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
@@ -40,6 +46,9 @@
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
+    @media screen and (max-width:782px){
+        padding: 0.75vh 2vw;
+    }
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
