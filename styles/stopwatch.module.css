@@ -1,5 +1,4 @@
-
-.timer{
+.timer {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -9,69 +8,92 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .timerCol {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
-.buttonFinish{
+
+.buttonFinish {
     background-color: #af3800;
     width: fit-content;
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
-    @media screen and (max-width:782px){
+
+    @media screen and (max-width:782px) {
         padding: 0.75vh 2vw;
     }
+
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
 }
-.buttonStart{
+
+.buttonStart {
     background-color: #226f54;
     width: fit-content;
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
-    @media screen and (max-width:782px){
+
+    @media screen and (max-width:782px) {
         padding: 0.65vh 2.5vw;
     }
+
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
 }
+
 .buttonPause {
     width: fit-content;
     text-align: center;
     font-size: larger;
     padding: 0.75vh 1vw;
-    @media screen and (max-width:782px){
+
+    @media screen and (max-width:782px) {
         padding: 0.75vh 2vw;
     }
+
     border-radius: 20px;
     color: #fbfbf2;
     cursor: pointer;
-    border: 1.5px solid #af3800;  
+    border: 1.5px solid #af3800;
 }
-.buttonsDiv{
+
+.buttonsDiv {
     display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
 }
-.buttonDiv{
+
+.buttonDiv {
     width: 100%;
     justify-content: center;
 }
 
-.title{
+.title {
     font-size: 20px;
     font-weight: 600;
+
+    @media screen and (max-width:782px) {
+        font-size: 18px;
+    }
 }
-.taskCard{
+
+.taskCard {
     border-radius: 20px;
     color: #fdfffc;
     padding: 3vh 1.5vw;
+
+    @media screen and (max-width:782px) {
+        font-size: 14px;
+        padding: 2vh 2.2vw;
+    }
+
     background-color: #18181b;
 }
