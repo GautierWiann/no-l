@@ -1,8 +1,9 @@
 import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  value: {_id: "uXdKnQpnkcbeGhd6bcMe3MFy" 
-    // 'RwvZNfRY3HthTWSual7hLQDK'
+  value: {_id: 
+    // "uXdKnQpnkcbeGhd6bcMe3MFy" 
+    'RwvZNfRY3HthTWSual7hLQDK'
     , projects : []},
 };
 
