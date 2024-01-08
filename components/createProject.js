@@ -1,7 +1,10 @@
 import styles from '../styles/createProject&Tasks.module.css'
 import { useState } from 'react';
 import { Row } from 'reactstrap';
+import { useSelector } from 'react-redux';
 export default function CreateProject(props) {
+    
+    let userId = useSelector(state => state.user.value._id)
     const [state, setState] = useState({});
     console.log("🚀 ~ file: createProject.js:6 ~ CreateProject ~ state:", state)
     const [valide1, setValide1] = useState(false)
@@ -25,7 +28,7 @@ export default function CreateProject(props) {
             const rawResponse = await fetch('https://noel-back.vercel.app/project/create', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ project: { name: state.name, budget: Number(state.budget), desc: state.desc }, userId: "RwvZNfRY3HthTWSual7hLQDK" }),
+                body: JSON.stringify({ project: { name: state.name, budget: Number(state.budget), desc: state.desc }, userId: userId }),
             });
 
             const response = await rawResponse.json(); 

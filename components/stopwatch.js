@@ -1,8 +1,11 @@
 import styles from '../styles/stopwatch.module.css'
-import { useState, useEffect } from 'react';
+import { useState ,useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Row, Col } from 'reactstrap'
 
 export default function Stopwatch(props) {
+  
+  let userId = useSelector(state => state.user.value._id)
   const [isActive, setIsActive] = useState(false);
   const [isPaused, setIsPaused] = useState(true);
   const [time, setTime] = useState(0);
@@ -47,7 +50,7 @@ export default function Stopwatch(props) {
     const rawResponse = await fetch('https://noel-back.vercel.app/task/add-session', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: "RwvZNfRY3HthTWSual7hLQDK", session:{}  }),
+      body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: userId, session:{}  }),
   });
 
   const response = await rawResponse.json(); 
@@ -65,7 +68,7 @@ export default function Stopwatch(props) {
     const rawResponse = await fetch('https://noel-back.vercel.app/task/end-session', {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: "RwvZNfRY3HthTWSual7hLQDK", sessionId, duration: time/ 3600000  }),
+      body: JSON.stringify({ taskId: props.task._id, projectId: props.projectId, userId: userId, sessionId, duration: time/ 3600000  }),
   });
 
   const response = await rawResponse.json(); 
